@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Store App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Store App</h1>
+    <hr />
+
+    <div class="add-product">
+      <input type="text" id="productTitle" placeholder="Product title" />
+
+      <input type="number" id="productPrice" placeholder="Price" />
+
+      <button onclick="addProduct()">Add Product</button>
+    </div>
+
+    <div class="products" id="products">
+      <!-- <div class="products__card">
+        <img src="https://placehold.co/300x400" alt="Title 1" />
+        <h2>Title 1 - 20 UAH</h2>
+        <button>Add To Card</button>
+      </div>
+      <div class="products__card">
+        <img src="https://placehold.co/300x500" alt="Title 1" />
+        <h2>Title 1 - 20 UAH</h2>
+        <button>Add To Card</button>
+      </div> -->
+    </div>
+    <hr />
+    <h2>Cart</h2>
+    <table class="cart-table">
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Price</th>
+          <th>Quantity</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="cartBody"></tbody>
+    </table>
+
+    <h3 id="total">Total: 0 UAH</h3>
+
+    <script src="script.js"></script>
+  </body>
+</html>
